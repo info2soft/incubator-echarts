@@ -298,6 +298,7 @@ DataView.defaultOption = {
     lang: zrUtil.clone(dataViewLang.lang),
     backgroundColor: '#fff',
     textColor: '#000',
+    mainStyle: 'display:block;width:100%;overflow:auto;',
     textareaColor: '#fff',
     textareaBorderColor: '#333',
     buttonColor: '#c23531',
@@ -323,7 +324,7 @@ DataView.prototype.onclick = function (ecModel, api) {
 
     var viewMain = document.createElement('div');
     var textarea = document.createElement('textarea');
-    viewMain.style.cssText = 'display:block;width:100%;overflow:auto;';
+    viewMain.style.cssText = model.get('mainStyle');
 
     var optionToContent = model.get('optionToContent');
     var contentToOption = model.get('contentToOption');

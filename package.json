@@ -1,6 +1,6 @@
 {
   "name": "echarts",
-  "version": "4.4.0",
+  "version": "4.4.0-fix",
   "description": "A powerful charting and visualization library for browser",
   "license": "Apache-2.0",
   "keywords": [
